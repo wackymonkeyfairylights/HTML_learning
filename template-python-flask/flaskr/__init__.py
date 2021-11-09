@@ -40,7 +40,9 @@ def create_app(test_config=None):
     def next_page():
         return render_template("next.html")
 
-
+    @app.route('/question_1')
+    def question():
+        return render_template('Q1.html')
     
 #Making the app run
     return app
