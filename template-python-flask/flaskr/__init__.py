@@ -36,14 +36,27 @@ def create_app(test_config=None):
 
 
 #Page Second
-    @app.route("/next_page")
-    def next_page():
-        return render_template("next.html")
 
     @app.route('/question_1')
     def question():
         return render_template('Q1.html')
-    
+
+
+    @app.route('/questoin_2')
+    def question2():
+        return render_template('Q2.html')
+
+    @app.route('/quesiton_3')
+    def question3():
+        return render_template('Q3.html')
+
+    @app.route('/quetsion_4')
+    def question4():
+        return render_template('Q4.html')
+
+    @app.route('/questino_5')
+    def question5():
+        return render_template('Q5.html')
 #Making the app run
     return app
 
